@@ -20,8 +20,14 @@ body {
     grid-column: 1 / -1;
     padding: 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+}
+
+.right-bar {
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .burger-menu {
@@ -41,9 +47,60 @@ body {
 }
 
 .main-header .logo {
-    width: 7.1rem;
-    height: 2.6rem;
+    width: 7.1em;
+    height: 2.6em;
     padding-left: 15px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+    flex-grow: 1;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.search-bar {
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.search-button {
+    border: none;
+    background-color: rgb(240, 240, 240);
+    padding: 4px 15px;
+    cursor: pointer;
+    border-left: 1px solid black;
+}
+
+.search-button:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.search-button img {
+    height: 1.5em;
+}
+
+.three-img {
+    display: flex;
+    justify-content: center;
+}
+
+.three-img img{
+    height: 2em;
+    border: none;
+    border-radius: 50%;
+    padding: 0 0.5em;
 }
 
 .sidebar {
