@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 100%;
+}
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    padding-top: 5px;
+    padding-top: 0.3rem;
+    font-size: 1rem;
 }
 
 .container {
@@ -19,7 +24,7 @@ body {
 
 .main-header {
     grid-column: 1 / -1;
-    padding: 10px;
+    padding: 0.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,14 +36,14 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    padding-left: 0.5em;
+    padding-left: 0.5rem;
+    width: 10%;
 }
 
 .burger-menu {
-    font-size: 21px;
-    font-weight: 30px;
-    height: 42px;
-    width: 42px;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    width: 2.6rem;
     cursor: pointer;
     background: transparent;
     border: none;
@@ -51,9 +56,9 @@ body {
 }
 
 .main-header .logo {
-    width: 7.1em;
-    height: 2.6em;
-    padding-left: 15px;
+    width: 70%;
+    height: auto;
+    padding-left: 1rem;
 }
 
 .search-form {
@@ -65,16 +70,16 @@ body {
 
 .search-container {
     display: flex;
-    border: 1px solid black;
-    border-radius: 20px;
+    border: 0.06rem solid black;
+    border-radius: 1.25rem;
     overflow: hidden;
-    width: 62%;
+    width: 60%;
 }
 
 .search-bar {
     border: none;
-    padding: 10px;
-    font-size: 16px;
+    padding: 0.6rem;
+    font-size: 1rem;
     flex-grow: 1;
     outline: none;
 }
@@ -82,9 +87,9 @@ body {
 .search-button {
     border: none;
     background-color: rgb(240, 240, 240);
-    padding: 4px 15px;
+    padding: 0.3rem 1rem;
     cursor: pointer;
-    border-left: 1px solid black;
+    border-left: 0.06rem solid black;
 }
 
 .search-button:hover {
@@ -92,19 +97,20 @@ body {
 }
 
 .search-button img {
-    height: 1.5em;
+    height: 1.5rem;
 }
 
 .three-img {
     display: flex;
     justify-content: center;
+    width: 10%;
 }
 
 .three-img img {
-    height: 2em;
+    height: 2rem;
     border: none;
     border-radius: 50%;
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
 }
 
 .sidebar {
@@ -118,26 +124,20 @@ body {
     text-align: center;
 }
 
-.narrow-sidebar p {
-    font-size: 10px;
-    text-align: start;
-}
-
-
 .img-bar {
-    padding: 12px 0;
+    padding: 0.6rem 0;
     cursor: pointer;
     border: none;
     border-radius: 15%;
-    margin: 8px;
+    margin: 0.5rem;
 }
 
 .img-bar img {
-    width: 1.5em;
+    width: 1.5rem;
 }
 
 .narrow-sidebar p {
-    font-size: 10px;
+    font-size: 0.625rem;
     text-align: center;
 }
 
@@ -155,44 +155,44 @@ body {
 }
 
 .expanded-sidebar img {
-    width: 1.5em;
+    width: 1.5rem;
     text-align: start;
     align-items: center;
-    margin-right: 1.5em;
-    margin-left: 0.8em;
+    margin-right: 1.5rem;
+    margin-left: 0.8rem;
     vertical-align: middle;
 }
 
 .p-bar {
     display: block;
-    line-height: 1.5em;
-    padding: 7px 0;
+    line-height: 1.5rem;
+    padding: 0.4375rem 0;
     text-align: start;
     align-items: center;
     cursor: pointer;
     border: none;
-    border-radius: 12px;
-    margin: 10px;
+    border-radius: 0.75rem;
+    margin: 0.625rem;
 }
 
 .paragraphs-one {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.0625rem;
     cursor: pointer;
     display: block;
-    margin: 10px;
-    border-radius: 12px;
-    line-height: 1.5em;
-    padding: 7px 0 7px 14px;
+    margin: 0.625rem;
+    border-radius: 0.75rem;
+    line-height: 1.5rem;
+    padding: 0.4375rem 0 0.4375rem 0.875rem;
 }
 
 .paragraphs-two {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.0625rem;
     cursor: default;
     display: block;
-    line-height: 1.5em;
-    padding: 7px 0 7px 22px;
+    line-height: 1.5rem;
+    padding: 0.4375rem 0 0.4375rem 1.375rem;
 }
 
 .p-bar:hover,
@@ -220,16 +220,16 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-left: 0.5em;
+    margin-left: 0.5rem;
 }
 
 .main-top-bar {
-    height: 40px;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: start;
     text-align: center;
-    margin: 5px 0 25px 0;
+    margin: 0.3125rem 0 1.5625rem 0;
 }
 
 .main-details {
@@ -237,7 +237,6 @@ body {
     display: flex;
     align-items: start;
     justify-content: center;
-    font-size: 16px;
 }
 
 .topic {
@@ -248,13 +247,13 @@ body {
 }
 
 .topic li {
-    margin-right: 10px;
+    margin-right: 0.625rem;
     border: none;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
     background-color: rgb(241, 241, 241);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .topic li:hover {
@@ -273,14 +272,14 @@ body {
     grid-template-rows: 23rem;
 }
 
-.container.expanded .card-video img{
-    width: 400px;
-    border-radius: 15px;
-    margin-right: 10px;
+.container.expanded .card-video img {
+    width: 25rem;
+    border-radius: 0.9375rem;
+    margin-right: 0.625rem;
 }
 
-.container.expanded .card-logo img{
-    width: 40px;
+.container.expanded .card-logo img {
+    width: 2.5rem;
     border-radius: 50%;
     text-align: center;
 }
@@ -288,17 +287,17 @@ body {
 .card-block-text {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .card-video img {
-    width: 310px;
-    border-radius: 15px;
-    margin-right: 10px;
+    width: 19.375rem;
+    border-radius: 0.9375rem;
+    margin-right: 0.625rem;
 }
 
 .card-logo img {
-    width: 40px;
+    width: 2.5rem;
     border-radius: 50%;
     text-align: center;
 }
@@ -314,18 +313,134 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
-    width: 240px;
+    width: 15rem;
 }
 
 .card-text-bottom {
     color: rgb(135, 135, 135);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
-@media (max-width: 768px) {
+/* Для экранов 4K (от 2560px и больше) */
+@media (min-width: 2560px) {
+    .right-bar {
+        padding-left: 1.5rem;
+    }
+
+    .burger-menu {
+        font-size: 2.5rem;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .main-header .logo {
+        width: 65%;
+        height: auto;
+        padding-left: 1rem;
+    }
+
+    .search-container {
+        border: 0.09rem solid black;
+        width: 80%;
+    }
+
+    .search-bar {
+        border: none;
+        padding: 0.75rem;
+        font-size: 1.3rem;
+    }
+
+    .search-button {
+        border-left: 0.09rem solid black;
+    }
+
+    .search-button img {
+        height: 1.7rem;
+    }
+
+    .three-img img {
+        height: 3rem;
+    }
+
+    .img-bar img {
+        width: 2.5rem;
+    }
+
+    .narrow-sidebar p {
+        font-size: 1rem;
+    }
+
+    .expanded-sidebar img {
+        width: 2.5rem;
+        margin-right: 1.7rem;
+        margin-left: 2.2rem;
+    }
+
+    .p-bar {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .paragraphs-one {
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-left: 2.3rem;
+    }
+
+    .paragraphs-two {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-left: 3rem;
+    }
+
+    .main-top-bar {
+        height: 3rem;
+    }
+
+    .topic li {
+        font-size: 1.3rem;
+    }
+
     .main-details {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 25rem;
+    }
+
+    .container.expanded .main-details {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 23rem;
+    }
+
+    .container.expanded .card-video img {
+        width: 25rem;
+        margin-right: 0.625rem;
+    }
+
+    .container.expanded .card-logo img {
+        width: 2.5rem;
+    }
+
+    .card-video img {
+        width: 28.5rem;
+    }
+
+    .card-logo img {
+        width: 3.5rem;
+    }
+
+    .card-text-top {
+        font-size: 1.3rem;
+        width: 23rem;
+    }
+
+    .card-text-bottom {
+        font-size: 1.1rem;
     }
 }
+
+    /* Ваши стили для экранов шириной от 1280px до 1440px */
+@media (min-width: 1280px) and (max-width: 1440px) {}
