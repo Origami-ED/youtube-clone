@@ -323,124 +323,48 @@ body {
     font-size: 0.875rem;
 }
 
-/* Для экранов 4K (от 2560px и больше) */
-@media (min-width: 2560px) {
-    .right-bar {
-        padding-left: 1.5rem;
-    }
+@media screen and (max-width: 320px) {
+    /* Ваши стили для маленьких мобильных устройств */
+}
 
-    .burger-menu {
-        font-size: 2.5rem;
-        height: 4rem;
-        width: 4rem;
-    }
+@media screen and (max-width: 480px) {
+    /* Ваши стили для мобильных устройств */
+}
 
-    .main-header .logo {
-        width: 65%;
-        height: auto;
-        padding-left: 1rem;
-    }
+@media screen and (max-width: 600px) {
+    /* Ваши стили для мобильных устройств */
+}
 
-    .search-container {
-        border: 0.09rem solid black;
-        width: 80%;
-    }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    /* Ваши стили для небольших планшетов */
+}
 
-    .search-bar {
-        border: none;
-        padding: 0.75rem;
-        font-size: 1.3rem;
-    }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Ваши стили для планшетов */
+}
 
-    .search-button {
-        border-left: 0.09rem solid black;
-    }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    /* Ваши стили для планшетов и маленьких ноутбуков */
+}
 
-    .search-button img {
-        height: 1.7rem;
-    }
-
-    .three-img img {
-        height: 3rem;
-    }
-
-    .img-bar img {
-        width: 2.5rem;
-    }
-
-    .narrow-sidebar p {
-        font-size: 1rem;
-    }
-
-    .expanded-sidebar img {
-        width: 2.5rem;
-        margin-right: 1.7rem;
-        margin-left: 2.2rem;
-    }
-
-    .p-bar {
-        line-height: 2rem;
-        font-size: 1.3rem;
-    }
-
-    .paragraphs-one {
-        font-weight: bold;
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding-left: 2.3rem;
-    }
-
-    .paragraphs-two {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding-left: 3rem;
-    }
-
-    .main-top-bar {
-        height: 3rem;
-    }
-
-    .topic li {
-        font-size: 1.3rem;
-    }
-
-    .main-details {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 25rem;
-    }
-
-    .container.expanded .main-details {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 23rem;
-    }
-
-    .container.expanded .card-video img {
-        width: 25rem;
-        margin-right: 0.625rem;
-    }
-
-    .container.expanded .card-logo img {
-        width: 2.5rem;
-    }
-
-    .card-video img {
-        width: 28.5rem;
-    }
-
-    .card-logo img {
-        width: 3.5rem;
-    }
-
-    .card-text-top {
-        font-size: 1.3rem;
-        width: 23rem;
-    }
-
-    .card-text-bottom {
-        font-size: 1.1rem;
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    html {
+        font-size: 15px;
     }
 }
 
-    /* Ваши стили для экранов шириной от 1280px до 1440px */
-@media (min-width: 1280px) and (max-width: 1440px) {}
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    /* Ваши стили для очень больших экранов */
+}
+
+@media (min-width: 2560px) {
+    html {
+        font-size: 26px;
+    }
+}
