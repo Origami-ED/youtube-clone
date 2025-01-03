@@ -324,29 +324,62 @@ body {
     font-size: 0.875rem;
 }
 
-/* Мобильные устройства (максимум 320px) */
-@media screen and (max-width: 320px) {
-    /* Ваши стили для маленьких мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    .narrow-sidebar {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .narrow-sidebar .img-bar {
+        margin: 0 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .narrow-sidebar p {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Если необходимо уменьшить размеры изображений */
+    .narrow-sidebar img {
+        width: 2rem;
+    }
 }
 
-/* Мобильные устройства (до 480px) */
-@media screen and (max-width: 480px) {
-    /* Ваши стили для мобильных устройств */
-}
+/* Стили для мобильных телефонов (меньше 480px) */
+@media (max-width: 480px) {
+    .narrow-sidebar {
+        padding: 0.5rem;
+    }
 
-/* Мобильные устройства (до 600px) */
-@media screen and (max-width: 600px) {
-    /* Ваши стили для мобильных устройств */
-}
+    .narrow-sidebar .img-bar {
+        margin: 0 0.5rem;
+    }
 
-/* Небольшие планшеты (от 601px до 768px) */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-    /* Ваши стили для небольших планшетов */
-}
+    .narrow-sidebar img {
+        width: 1.5rem;
+    }
 
-/* Планшеты (от 769px до 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Ваши стили для планшетов */
+    .narrow-sidebar p {
+        font-size: 0.625rem;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
