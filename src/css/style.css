@@ -324,48 +324,58 @@ body {
     font-size: 0.875rem;
 }
 
+/* Мобильные устройства (максимум 320px) */
 @media screen and (max-width: 320px) {
     /* Ваши стили для маленьких мобильных устройств */
 }
 
+/* Мобильные устройства (до 480px) */
 @media screen and (max-width: 480px) {
     /* Ваши стили для мобильных устройств */
 }
 
+/* Мобильные устройства (до 600px) */
 @media screen and (max-width: 600px) {
     /* Ваши стили для мобильных устройств */
 }
 
+/* Небольшие планшеты (от 601px до 768px) */
 @media screen and (min-width: 601px) and (max-width: 768px) {
     /* Ваши стили для небольших планшетов */
 }
 
+/* Планшеты (от 769px до 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Ваши стили для планшетов */
 }
 
+/* Планшеты и маленькие ноутбуки (от 1025px до 1280px) */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
     /* Ваши стили для планшетов и маленьких ноутбуков */
 }
 
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
+/* Средние и большие экраны (от 1281px до 1439px) */
+@media screen and (min-width: 1281px) and (max-width: 1439px) {
     html {
         font-size: 15px;
     }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
+/* Средние экраны (от 1440px до 1919px) */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
     html {
         font-size: 16px;
     }
 }
 
-@media screen and (min-width: 1921px) {
+/* Большие экраны (от 1920px и выше) */
+@media screen and (min-width: 1920px) {
     html {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
 
+/* Очень большие экраны (от 2560px и выше) */
 @media (min-width: 2560px) {
     html {
         font-size: 26px;
