@@ -371,7 +371,7 @@ body {
 /* Большие экраны (от 1920px и выше) */
 @media screen and (min-width: 1920px) {
     html {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 
