@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     padding-top: 0.3rem;
     font-size: 1rem;
+    background-color: white;
 }
 
 .container {
@@ -360,7 +361,9 @@ body {
 }
 
 @media screen and (min-width: 1921px) {
-    /* Ваши стили для очень больших экранов */
+    html {
+        font-size: 22px;
+    }
 }
 
 @media (min-width: 2560px) {
