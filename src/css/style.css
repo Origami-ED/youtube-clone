@@ -379,7 +379,7 @@ body {
         margin-bottom: 2rem;
     }
 
-    .card-video>img{
+    .card-video>img {
         width: 100vw;
     }
 
@@ -420,14 +420,13 @@ body {
         grid-row: 3;
         position: sticky;
         bottom: 0;
+        background-color: white;
     }
 
     .expanded-sidebar {
         display: none;
     }
 }
-
-
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     html {
