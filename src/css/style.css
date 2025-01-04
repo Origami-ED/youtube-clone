@@ -325,60 +325,65 @@ body {
 }
 
 @media (max-width: 768px) {
+    html {
+        font-size: 5px;
+    }
+
     .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto;
+        grid-template-rows: auto 1fr auto;
+        height: 100%;
+    }
+
+    .main-header {
+        grid-row: 1;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .content-main {
+        overflow-y: auto;
+        grid-row: 2;
     }
 
     .narrow-sidebar {
-        grid-column: 1 / -1;
-        grid-row: 2 / 3;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        background-color: #fff;
-        position: fixed;
+        grid-row: 3;
+        position: sticky;
         bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-    }
-
-    .narrow-sidebar .img-bar {
-        margin: 0 1rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .narrow-sidebar p {
-        font-size: 0.75rem;
-        margin-top: 0.5rem;
-    }
-
-    /* Если необходимо уменьшить размеры изображений */
-    .narrow-sidebar img {
-        width: 2rem;
+        width: 100%;
     }
 }
 
 /* Стили для мобильных телефонов (меньше 480px) */
 @media (max-width: 480px) {
+    html {
+        font-size: 4px;
+    }
+
+    .container {
+        grid-template-rows: auto 1fr auto;
+        height: 100%;
+    }
+
+    .main-header {
+        grid-row: 1;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .content-main {
+        overflow-y: auto;
+        grid-row: 2;
+    }
+
     .narrow-sidebar {
-        padding: 0.5rem;
-    }
-
-    .narrow-sidebar .img-bar {
-        margin: 0 0.5rem;
-    }
-
-    .narrow-sidebar img {
-        width: 1.5rem;
-    }
-
-    .narrow-sidebar p {
-        font-size: 0.625rem;
+        grid-row: 3;
+        position: sticky;
+        bottom: 0;
+        width: 100%;
     }
 }
 
