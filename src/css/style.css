@@ -326,66 +326,108 @@ body {
 
 @media (max-width: 768px) {
     html {
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .container {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto;
-        height: 100%;
     }
 
     .main-header {
         grid-row: 1;
+        grid-column: auto;
+        justify-content: space-between;
+    }
+
+    .main-header .logo {
+        width: 7rem;
     }
 
     .burger-menu {
         display: none;
     }
 
-    .content-main {
-        overflow-y: auto;
-        grid-row: 2;
-    }
-
-    .narrow-sidebar {
-        grid-row: 3;
-        position: sticky;
-        bottom: 0;
-        width: 100%;
-    }
-}
-
-/* Стили для мобильных телефонов (меньше 480px) */
-@media (max-width: 480px) {
-    html {
-        font-size: 4px;
-    }
-
-    .container {
-        grid-template-rows: auto 1fr auto;
-        height: 100%;
-    }
-
-    .main-header {
-        grid-row: 1;
-    }
-
-    .burger-menu {
+    .search-form {
         display: none;
     }
 
+    .right-bar {
+        width: auto;
+    }
+
+    .three-img {
+        width: auto;
+    }
+
     .content-main {
         overflow-y: auto;
         grid-row: 2;
+        grid-column: auto;
+        margin: 0;
+    }
+
+    .main-details {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-video {
+        margin-bottom: 2rem;
+    }
+
+    .card-video>img{
+        width: 100vw;
+    }
+
+    .card-block-text {
+        width: 100vw;
+    }
+
+    .card-logo {
+        margin-left: 0.5rem;
+    }
+
+    .card-text-top {
+        width: 100vw;
+        text-align: start;
+    }
+
+    .card-text-bottom {
+        text-align: start;
+    }
+
+    .main-top-bar {
+        white-space: nowrap;
+        overflow-x: auto;
+        min-width: 100vw;
+        width: 100%;
+        padding: 2.3rem 0;
+    }
+
+    .topic {
+        display: flex;
+        gap: 1rem;
+        padding-left: 0.5rem;
     }
 
     .narrow-sidebar {
+        display: flex;
+        justify-content: space-around;
         grid-row: 3;
         position: sticky;
         bottom: 0;
-        width: 100%;
+    }
+
+    .expanded-sidebar {
+        display: none;
     }
 }
+
+
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     html {
